@@ -1,0 +1,5 @@
+name = Responsive Blocks
+description = Blocks display will handled based on its configuration for specfic resolution( width of screen ).
+core = 7.x
+package = Responsive Design
+
