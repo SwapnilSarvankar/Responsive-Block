@@ -39,6 +39,9 @@ function responsive_blocks_admin_settings() {
   return system_settings_form($form);
 }
 
+/**
+ * Handles Validation.
+ */
 function responsive_blocks_admin_validate($form, &$form_state) {
   $validate_device = array('desktop', 'ipad', 'mobile');
   foreach ($validate_device as $value) {
@@ -47,4 +50,5 @@ function responsive_blocks_admin_validate($form, &$form_state) {
     }
   }
 }
+
 

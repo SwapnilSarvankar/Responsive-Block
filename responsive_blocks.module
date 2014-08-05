@@ -18,7 +18,6 @@ function responsive_blocks_help($path, $arg) {
 /**
  * Implements hook_init().
  */
-
 function responsive_blocks_init() {
   drupal_add_js(drupal_get_path('module', 'responsive_blocks') . '/js/responsive_blocks.js', 'file');
 }
@@ -45,7 +44,6 @@ function responsive_blocks_menu() {
 /**
  * Callback function for returning content of READ ME file.
  */
- 
 function _responsive_blocks_get_readme() {
   $readme = file_get_contents(dirname(__FILE__) . '/README.txt');
 
