@@ -42,7 +42,7 @@ function responsive_blocks_menu() {
 }
 
 /**
- * Callback function for returning content of READ ME file.
+ * Callback function for returning content of README file.
  */
 function _responsive_blocks_get_readme() {
   $readme = file_get_contents(dirname(__FILE__) . '/README.txt');
@@ -175,7 +175,7 @@ function responsive_blocks_block_view_alter(&$data, $block) {
     }
   }
   $device_width = array();
-  $device_list = array('desktop', 'ipad', 'mobile');
+  $device_list = array('responsive_blocks_desktop', 'responsive_blocks_ipad', 'responsive_blocks_mobile');
   foreach ($device_list as $value) {
     $width = variable_get($value, '');
     $device_width[$value] = $width;
