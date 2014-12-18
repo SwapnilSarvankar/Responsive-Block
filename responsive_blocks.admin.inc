@@ -14,7 +14,7 @@ function responsive_blocks_admin_settings() {
     '#type' => 'textfield',
     '#title' => t('Desktop Resolution - Start point'),
     '#description' => t('Enter the Desktop Resolution Starting point in pixel'),
-    '#default_value' => variable_get('desktop', 1600),
+    '#default_value' => variable_get('responsive_blocks_desktop', 1600),
     '#size' => 40,
     '#required' => TRUE,
   );
@@ -22,7 +22,7 @@ function responsive_blocks_admin_settings() {
     '#type' => 'textfield',
     '#title' => t('IPAD Resolution - Start point'),
     '#description' => t('Enter the IPAD Resolution Starting point in pixel'),
-    '#default_value' => variable_get('ipad', 780),
+    '#default_value' => variable_get('responsive_blocks_ipad', 780),
     '#size' => 40,
     '#required' => TRUE,
   );
@@ -30,7 +30,7 @@ function responsive_blocks_admin_settings() {
     '#type' => 'textfield',
     '#title' => t('Mobile Resolution - Start point'),
     '#description' => t('Enter the Mobile Resolution Starting point in pixel'),
-    '#default_value' => variable_get('mobile', 480),
+    '#default_value' => variable_get('responsive_blocks_mobile', 480),
     '#size' => 40,
     '#required' => TRUE,
   );
