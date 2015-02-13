@@ -1,10 +1,12 @@
 Responsive Blocks
 =============
 
-This is a lightweight solution for responsive blocks based on the MediaCheck library.
+This is a lightweight solution for responsive blocks based on the 
+MediaCheck library.
 (http://sparkbox.github.io/mediaCheck/) 
 
-This module is intended to aid Developer's and Designer's when working on Responsive design.
+This module is intended to aid Developer's and Designer's when 
+working on Responsive design.
 
 Requirements
 ------------
@@ -34,7 +36,8 @@ the Drupal caches (admin/config/development/performance).
 Usage
 -----
 
-This module provies an interface to Developer's/ Designer's to select and confirm if block should be 
+This module provies an interface to Developer's/ Designer's to select
+and confirm if block should be 
 displayed for particular device.
 
 Future

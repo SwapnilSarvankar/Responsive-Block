@@ -119,7 +119,10 @@ function responsive_blocks_form_block_admin_configure_alter(&$form, &$form_state
   $delta = $form['delta']['#value'];
   $settings = variable_get('responsive_blocks_block_settings', array());
   $response_widths = variable_get('responsive_blocks_reponse_widths', array());
-  $response_widths = array('desktop' => 'Desktop', 'ipad' => 'IPAD', 'mobile' => 'Mobile');
+  $response_widths = array('desktop' => 'Desktop',
+  'ipad' => 'IPAD',
+  'mobile' => 'Mobile');
+
   $form['actions']['#weight'] = 100;
   $form['visibility']['responsive_blocks'] = array(
     '#type' => 'fieldset',
@@ -175,11 +178,15 @@ function responsive_blocks_block_view_alter(&$data, $block) {
     }
   }
   $device_width = array();
-  $device_list = array('responsive_blocks_desktop', 'responsive_blocks_ipad', 'responsive_blocks_mobile');
+  $device_list = array('responsive_blocks_desktop',
+  'responsive_blocks_ipad',
+  'responsive_blocks_mobile');
+
   foreach ($device_list as $value) {
     $width = variable_get($value, '');
     $device_width[$value] = $width;
   }
+
   drupal_add_js(array('responsive_blocks' => array('responsive_blocks' => $js_variables)), 'setting');
   drupal_add_js(array('responsive_blocks' => array('device_width' => $device_width)), 'setting');
 }

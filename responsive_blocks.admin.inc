@@ -50,5 +50,3 @@ function responsive_blocks_admin_validate($form, &$form_state) {
     }
   }
 }
-
-

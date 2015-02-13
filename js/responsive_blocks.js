@@ -1,7 +1,6 @@
-
 /**
  * @file
- * JavaScript Code for using mediaCheck plug-in
+ * JavaScript Code for using mediaCheck plug-in.
  */
 
 (function($) {
