@@ -119,9 +119,10 @@ function responsive_blocks_form_block_admin_configure_alter(&$form, &$form_state
   $delta = $form['delta']['#value'];
   $settings = variable_get('responsive_blocks_block_settings', array());
   $response_widths = variable_get('responsive_blocks_reponse_widths', array());
-  $response_widths = array('desktop' => 'Desktop',
-  'ipad' => 'IPAD',
-  'mobile' => 'Mobile');
+  $response_widths = array(
+      'desktop' => 'Desktop',
+      'ipad' => 'IPAD',
+      'mobile' => 'Mobile');
 
   $form['actions']['#weight'] = 100;
   $form['visibility']['responsive_blocks'] = array(
