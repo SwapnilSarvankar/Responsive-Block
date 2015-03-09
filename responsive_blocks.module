@@ -15,13 +15,15 @@ function responsive_blocks_help($path, $arg) {
   }
 }
 
+
 /**
- * Implements hook_init().
+ * Implements hook_preprocess_html().
+ *
  */
-function responsive_blocks_init() {
+function responsive_blocks_preprocess_html(&$vars) {
   drupal_add_js(drupal_get_path('module', 'responsive_blocks') . '/js/responsive_blocks.js', 'file');
 }
-
+  
 /**
  * Implements hook_menu().
  */
@@ -72,8 +74,8 @@ function _responsive_blocks_get_readme() {
 function responsive_blocks_libraries_info() {
   $libraries['mediacheck'] = array(
     'name' => 'mediaCheck',
-    'vendor url' => 'http://www.woothemes.com/flexslider/',
-    'download url' => 'https://github.com/woothemes/FlexSlider',
+    'vendor url' => 'http://sparkbox.github.io/mediaCheck/',
+    'download url' => 'https://github.com/sparkbox/mediaCheck',
     'version arguments' => array(
       'file' => 'mediaCheck.js',
       // jQuery mediaCheck Responsive.
