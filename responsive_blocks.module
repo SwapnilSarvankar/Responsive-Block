@@ -15,15 +15,13 @@ function responsive_blocks_help($path, $arg) {
   }
 }
 
-
 /**
  * Implements hook_preprocess_html().
- *
  */
 function responsive_blocks_preprocess_html(&$vars) {
   drupal_add_js(drupal_get_path('module', 'responsive_blocks') . '/js/responsive_blocks.js', 'file');
 }
-  
+
 /**
  * Implements hook_menu().
  */
