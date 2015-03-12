@@ -187,7 +187,19 @@ function responsive_blocks_block_view_alter(&$data, $block) {
     $width = variable_get($value, '');
     $device_width[$value] = $width;
   }
-
-  drupal_add_js(array('responsive_blocks' => array('responsive_blocks' => $js_variables)), 'setting');
-  drupal_add_js(array('responsive_blocks' => array('device_width' => $device_width)), 'setting');
+  /* To take advantage of Drupal's render array when caching is enabled*/
+  $data['content']['#attached']['js'] = array(
+    array(
+      'responsive_blocks' => array(
+        'responsive_blocks' => $js_variables,
+        ),
+      'type' => 'setting',
+      ),
+    array(
+      'responsive_blocks' => array(
+        'device_width' => $device_width,
+        ),
+      'type' => 'setting',
+      )
+    );
 }
