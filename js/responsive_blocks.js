@@ -14,9 +14,7 @@
             var desktop = device_width['desktop'] + 'px';
             var ipad = device_width['ipad'] + 'px';
             var mobile = device_width['mobile'] + 'px';
-            var blocks = [];
             var block_name;
-            var blocks_array = [];
             var desktop_blocks = [];
             var ipad_blocks = [];
             var mobile_blocks = [];

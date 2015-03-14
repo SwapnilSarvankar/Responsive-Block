@@ -13,6 +13,7 @@ function responsive_blocks_help($path, $arg) {
     case 'admin/help#responsive_blocks':
       return _responsive_blocks_get_readme();
   }
+  return;
 }
 
 /**
@@ -26,7 +27,6 @@ function responsive_blocks_preprocess_html(&$vars) {
  * Implements hook_menu().
  */
 function responsive_blocks_menu() {
-  $items = array();
 
   $items['admin/config/services/responsive-blocks'] = array(
     'title' => 'Responsive Blocks - Configurations',
@@ -118,7 +118,6 @@ function responsive_blocks_form_block_admin_configure_alter(&$form, &$form_state
   $module = $form['module']['#value'];
   $delta = $form['delta']['#value'];
   $settings = variable_get('responsive_blocks_block_settings', array());
-  $response_widths = variable_get('responsive_blocks_reponse_widths', array());
   $response_widths = array(
     'desktop' => 'Desktop',
     'ipad' => 'IPAD',
