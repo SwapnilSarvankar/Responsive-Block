@@ -18,6 +18,8 @@ MediaCheck library.
 This module is intended to aid Developer's and Designer's when 
 working on Responsive design.
 
+P.S : Should not be used in a site with lot of blocks.
+
 Requirements
 =============
 Module functionality is implemented by using MediaCheck JS library 
