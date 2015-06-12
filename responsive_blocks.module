@@ -198,7 +198,7 @@ function responsive_blocks_block_view_alter(&$data, $block) {
     array(
       'responsive_blocks' => array(
         'device_width' => $device_width,
-  ),
+      ),
       'type' => 'setting',
     ),
   );
