@@ -120,7 +120,7 @@ function responsive_blocks_form_block_admin_configure_alter(&$form, &$form_state
   $response_widths = array(
     'desktop' => 'Desktop',
     'ipad' => 'IPAD',
-    'mobile' => 'Mobile'
+    'mobile' => 'Mobile',
     );
 
   $form['actions']['#weight'] = 100;
@@ -180,7 +180,7 @@ function responsive_blocks_block_view_alter(&$data, $block) {
   $device_width = array();
   $device_list = array('responsive_blocks_desktop',
     'responsive_blocks_ipad',
-    'responsive_blocks_mobile'
+    'responsive_blocks_mobile',
     );
 
   foreach ($device_list as $value) {
