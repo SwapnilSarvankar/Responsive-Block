@@ -13,7 +13,6 @@ function responsive_blocks_help($path, $arg) {
     case 'admin/help#responsive_blocks':
       return '<p>' . t('Different device breakpoints can be configured here. <a href="@responsive_blocks">Responsive block administration page</a>.', array('@responsive_blocks' => url('admin/config/services/responsive-blocks'))) . '</p>';
   }
-  return;
 }
 
 /**
