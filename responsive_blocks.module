@@ -121,7 +121,7 @@ function responsive_blocks_form_block_admin_configure_alter(&$form, &$form_state
     'desktop' => 'Desktop',
     'ipad' => 'IPAD',
     'mobile' => 'Mobile',
-    );
+  );
 
   $form['actions']['#weight'] = 100;
   $form['visibility']['responsive_blocks'] = array(
@@ -181,7 +181,7 @@ function responsive_blocks_block_view_alter(&$data, $block) {
   $device_list = array('responsive_blocks_desktop',
     'responsive_blocks_ipad',
     'responsive_blocks_mobile',
-    );
+  );
 
   foreach ($device_list as $value) {
     $width = variable_get($value, '');
@@ -192,14 +192,14 @@ function responsive_blocks_block_view_alter(&$data, $block) {
     array(
       'responsive_blocks' => array(
         'responsive_blocks' => $js_variables,
-        ),
-      'type' => 'setting',
       ),
+      'type' => 'setting',
+    ),
     array(
       'responsive_blocks' => array(
         'device_width' => $device_width,
-        ),
+  ),
       'type' => 'setting',
-      ),
-    );
+    ),
+  );
 }
