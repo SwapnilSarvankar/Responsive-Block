@@ -61,13 +61,12 @@ Resolutoin for Desktop, Tablet and Mobile can be configured here.
 
 FAQ
 ====
-1. This module makes use of JS plugin . No server side component is required to identity the Device.
-2. This module doesn't really identifies the Device , but works for different Resolutions
-
-
+1. This module makes use of JS plugin . No server side component is required to
+   identity the Device.
+2. This module doesn't really identifies the Device , but works for different
+   Resolutions
+ 
 Maintainers
 ============
 SwapS
 saurabh-chugh
-
-
