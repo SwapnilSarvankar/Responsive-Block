@@ -139,7 +139,7 @@ function responsive_blocks_form_block_admin_configure_alter(&$form, &$form_state
     '#title' => t('Available Response widths( Device options )'),
     '#options' => $response_widths,
     '#default_value' => empty($settings[$module][$delta]) ? array() : $settings[$module][$delta],
-    '#description' => t('Select options if block needs to be displayed on specific resolutions( Specific devices ). If none of the option is selected, block will be displayed for all the resolutions( Devices ). To set responsive resolutions : <a href="!url">Responsive Block Configuration</a>', array('!url' => url('admin/config/services/responsive-blocks'))),
+    '#description' => t('Select options if block needs to be displayed on specific resolutions (Specific devices). If none of the option is selected, block will be displayed for all the resolutions (Devices). To set responsive resolutions : <a href="!url">Responsive Block Configuration</a>', array('!url' => url('admin/config/services/responsive-blocks'))),
   );
   $form['#submit'][] = 'responsive_blocks_form_block_admin_configure_submit';
 }
