@@ -6,7 +6,7 @@
  */
 
 /**
- * Menu callback administration settings for general options.
+ * Form constructor for the admin settings form.
  */
 function responsive_blocks_admin_settings() {
   $form = array();

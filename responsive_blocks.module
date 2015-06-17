@@ -55,11 +55,11 @@ function _responsive_blocks_get_readme() {
       $output = filter_xss_admin($function($readme, NULL));
     }
     else {
-      $output = '<pre>' . check_plain($readme) . '</pre>';
+      $output = '<pre>' . $readme . '</pre>';
     }
   }
   else {
-    $output = '<pre>' . check_plain($readme) . '</pre>';
+    $output = '<pre>' . $readme . '</pre>';
   }
 
   return $output;
