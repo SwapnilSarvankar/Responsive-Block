@@ -11,9 +11,9 @@
              */
             var responsive_blocks = convert(settings.responsive_blocks.responsive_blocks);
             var device_width = convert(settings.responsive_blocks.device_width);
-            var desktop = device_width['desktop'] + 'px';
-            var ipad = device_width['ipad'] + 'px';
-            var mobile = device_width['mobile'] + 'px';
+            var desktop = device_width['responsive_blocks_desktop'] + 'px';
+            var ipad = device_width['responsive_blocks_ipad'] + 'px';
+            var mobile = device_width['responsive_blocks_mobile'] + 'px';
             var block_name;
             var desktop_blocks = [];
             var ipad_blocks = [];

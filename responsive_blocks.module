@@ -100,7 +100,7 @@ function _responsive_blocks_get_library_path() {
   if (function_exists('libraries_get_path')) {
     $library_path = libraries_get_path('mediaCheck');
     if (!$library_path) {
-      $library_path = 'sites/all/libraries/mediaCheck';
+      $library_path = 'sites/all/libraries/mediacheck/mediaCheck.js';
     }
   }
   else {
@@ -166,8 +166,8 @@ function responsive_blocks_block_view_alter(&$data, $block) {
     // Don't load any custom JS when administrators are viewing an admin page.
     return;
   }
-  $library_path = libraries_get_path('mediaCheck');
-  drupal_add_js($library_path . '/mediaCheck.js');
+  $library_path = _responsive_blocks_get_library_path();
+  drupal_add_js($library_path);
   $js_variables = array();
   $module = $block->module;
   $delta = $block->delta;
@@ -187,19 +187,6 @@ function responsive_blocks_block_view_alter(&$data, $block) {
     $width = variable_get($value, '');
     $device_width[$value] = $width;
   }
-  /* To take advantage of Drupal's render array when caching is enabled*/
-  $data['content']['#attached']['js'] = array(
-    array(
-      'responsive_blocks' => array(
-        'responsive_blocks' => $js_variables,
-      ),
-      'type' => 'setting',
-    ),
-    array(
-      'responsive_blocks' => array(
-        'device_width' => $device_width,
-      ),
-      'type' => 'setting',
-    ),
-  );
+  drupal_add_js(array('responsive_blocks' => array('responsive_blocks' => $js_variables)), 'setting');
+  drupal_add_js(array('responsive_blocks' => array('device_width' => $device_width)), 'setting');
 }
