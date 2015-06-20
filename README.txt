@@ -32,18 +32,18 @@ As noted, this module does not include the actual mediaCheck library.
 This should be downloaded or cloned from one of the links above and 
 placed in 
 
- - sites/all/libraries/mediaCheck
+ - sites/all/libraries/mediacheck
 
 or somewhere the Libraries API (if present) can find it, eg
 
- - sites/default/libraries/mediaCheck
- - sites/example.com/libraries/mediaCheck
+ - sites/default/libraries/mediacheck
+ - sites/example.com/libraries/mediacheck
  
 Once the module is installed and enabled, browse to the Status Report 
 page (admin/reports/status) and confirm that the library is found. The 
 PHP file should have a pathname that is similar to 
 
- - sites/all/libraries/mediaCheck/mediaCheck.js
+ - sites/all/libraries/mediacheck/mediaCheck.js
  
 If you think everything is installed correctly, you may need to clear 
 the Drupal caches (admin/config/development/performance). 
