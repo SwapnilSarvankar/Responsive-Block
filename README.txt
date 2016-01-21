@@ -68,5 +68,5 @@ FAQ
  
 Maintainers
 ============
-SwapS
-saurabh-chugh
+Swapnil Sarvankar (SwapS)
+Saurabh Chugh (saurabh-chugh)
