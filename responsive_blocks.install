@@ -22,6 +22,9 @@ function responsive_blocks_requirements($phase) {
   return $requirements;
 }
 
+/**
+ * Check if mediacheck library exists or not.
+  */
 function _responsive_blocks_requirements_library_installed() {
   $t = get_t();
 
